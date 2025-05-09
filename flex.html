@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snap Site</title>
+  <link rel="stylesheet" href="flex.css">
+  <style>
+    
+    .topnav ul { list-style: none; display: flex; gap: 2em; }
+    .topnav li { position: relative; }
+    .hover-area:hover .menu-box { display: block; }
+    .menu-box { display: none; position: absolute; background: #fefefe; padding: 0.8em; }
+    .main-action-btn:hover { background: #111; color: white; }
+  </style>
+</head>
+<body>
+  <div class="navWrap">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 15px 35px;">
+      <div><img src="images/logo.svg" style="height: 22px;" alt="Snap"></div>
+      <div class="topnav">
+        <ul>
+          <li class="hover-area">
+            <a href="#">Features</a>
+            <div class="menu-box">
+              <div><img src="images/icon-todo.svg" width="18"> <a href="#">Todo</a></div>
+              <div><img src="images/icon-calendar.svg" width="18"> <a href="#">Calendar</a></div>
+              <div><img src="images/icon-reminders.svg" width="18"> <a href="#">Reminders</a></div>
+              <div><img src="images/icon-planning.svg" width="18"> <a href="#">Planning</a></div>
+            </div>
+          </li>
+          <li class="hover-area">
+            <a href="#">Company</a>
+            <div class="menu-box">
+              <div><a href="#">History</a></div>
+              <div><a href="#">Team</a></div>
+              <div><a href="#">Blog</a></div>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <button style="background: none; border: none; margin-right: 12px;">Log in</button>
+        <button style="border: 1px solid black; padding: 6px 18px; border-radius: 20px;">Sign up</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; padding: 4em 2.5em; gap: 4em; align-items: center;">
+    <div style="flex: 1;">
+      <h1 style="font-size: 2.8em; line-height: 1.2;">Make remote work</h1>
+      <p style="margin-top: 1em; color: #555;">
+        Whether you're in the office or at home, keep your team running with simple tools.
+      </p>
+      <button class="main-action-btn" style="margin-top: 2em; padding: 10px 24px; border-radius: 25px; border: 2px solid #000; background: none; cursor: pointer;">
+        Learn more
+      </button>
+      <div style="margin-top: 3em; display: flex; gap: 1.5em;">
+        <img src="images/client-databiz.svg" width="75">
+        <img src="images/client-audiophile.svg" width="75">
+        <img src="images/client-meet.svg" width="75">
+        <img src="images/client-maker.svg" width="75">
+      </div>
+    </div>
+    <div style="flex: 1; text-align: center;">
+      <img src="images/image-hero-desktop.png" style="max-width: 90%;" alt="A person using laptop">
+    </div>
+  </div>
+</body>
+</html>
